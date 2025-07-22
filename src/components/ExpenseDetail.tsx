@@ -25,7 +25,7 @@ export default function ExpenseDetail({expense} : ExpenseDetailProps) {
     const categoryInfo = useMemo(() => categories.filter(cat => cat.id === expense.category)[0], [expense])
     
     const leadingActions = () => (
-        <LeadingActions>ß
+        <LeadingActions>
             <SwipeAction
                 onClick={() => dispatch({type: 'get-expense-by-id', payload: {id: expense.id}})}
             >
